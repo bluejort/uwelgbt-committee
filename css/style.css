@@ -1,0 +1,107 @@
+body {
+    background-color: #f1f1f1;
+}
+.ourTeam-hedding p{
+    color: #979797;
+}
+.ourTeam-hedding strong{
+    color: black;
+}
+.ourTeam-hedding{
+    margin-bottom: 50px;
+}
+.ourTeam-hedding h1{
+    font-size: 25px;
+    font-weight: bold;
+    color: #145889;
+}
+.ourTeam-box{
+    border-radius: 2px;
+    border-top: 6px solid #5DDDD3;
+    margin: 0px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+.section1{
+    padding: 30px 0px 30px 0px;
+}
+.section1 img{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+.section2 p{
+    font-weight: bold;
+    color: #5DDDD3;
+    letter-spacing: 1px;
+}
+.section2 span{
+    color: #979597;
+}
+.section3 {
+    background-color: #5DDDD3;
+}
+.section3 i{
+    color: #fff !important;
+    padding: 15px;
+    font-size: 15px;
+}
+.section-red{
+    border-top: 6px solid rgb(237, 34, 36);
+}
+.section-red p{
+    color: rgb(237, 34, 36);
+}
+.section-red .section3{
+    background-color:rgb(237, 34, 36);
+}
+.section-orange{
+    border-top: 6px solid rgb(243, 91, 34);
+}
+.section-orange p{
+    color: rgb(243, 91, 34);
+}
+.section-orange .section3{
+    background-color:rgb(243, 91, 34);
+}
+.section-yellow{
+    border-top: 6px solid rgb(245, 193, 30);
+}
+.section-yellow p{
+    color: rgb(245, 193, 30);
+}
+.section-yellow .section3{
+    background-color:rgb(245, 193, 30);
+}
+.section-green{
+    border-top: 6px solid rgb(99, 199, 32);
+}
+.section-green p{
+    color: rgb(99, 199, 32);
+}
+.section-green .section3{
+    background-color:rgb(99, 199, 32);
+}
+.section-blue{
+    border-top: 6px solid rgb(33, 135, 141);
+}
+.section-blue p{
+    color: rgb(33, 135, 141);
+}
+.section-blue .section3{
+    background-color:rgb(33, 135, 141);
+}
+.section-indigo{
+    border-top: 6px solid rgb(97, 55, 155);
+}
+.section-indigo p{
+    color: rgb(97, 55, 155);
+}
+.section-indigo .section3{
+    background-color:rgb(97, 55, 155);
+}
+.section-rainbow .section3{
+    background-color: linear-gradient(to right, rgb(237, 34, 36), rgb(243, 91, 34), rgb(249, 150, 33), rgb(245, 193, 30), rgb(241, 235, 27) 27%, rgb(241, 235, 27), rgb(241, 235, 27) 33%, rgb(99, 199, 32), rgb(12, 155, 73), rgb(33, 135, 141), rgb(57, 84, 165), rgb(97, 55, 155), rgb(147, 40, 142))
+}
