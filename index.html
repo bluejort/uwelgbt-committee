@@ -11,6 +11,60 @@
     <link href="css/style.css" rel="stylesheet"/>
     </head>
     <body>
+              <!-- Navbar -->
+              <nav class="navbar sticky-top navbar-expand-lg" style="z-index: 2000;">
+                <div class="container-fluid">
+                  <!-- Navbar brand -->
+                  <a class="navbar-brand" target="_blank" href="https://uwe.lgbt/">
+                    <img src="img/logo.png" height="50" alt="" loading="lazy"
+                      style="margin-top: -3px;" />
+                  </a>
+                  <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#lgbtnavbar"
+                    aria-controls="lgbtnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="lgbtnavbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#intro">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#events">Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#committee">Committee</a>
+                      </li>
+                    </ul>
+          
+                    <ul class="navbar-nav d-flex flex-row">
+                      <!-- Icons -->
+                      <li class="nav-item me-3 me-lg-0">
+                        <li class="nav-item me-3 me-lg-0">
+                          <a class="nav-link" href="https://www.instagram.com/uwe_lgbt/" rel="nofollow" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                        <a class="nav-link" href="https://discord.gg/5M2Mfan" rel="nofollow"
+                          target="_blank">
+                          <i class="fab fa-discord"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.facebook.com/UWELGBT" rel="nofollow" target="_blank">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://twitter.com/UWE_LGBT" rel="nofollow" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!-- Navbar -->
       <header>
         <style>
           #intro {
@@ -29,60 +83,6 @@
             color: #fff !important;
           }
         </style>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark d=none d-lg-block" style="z-index: 2000;">
-          <div class="container-fluid">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" target="_blank" href="https://uwe.lgbt/">
-              <img src="img/logo.png" height="50" alt="" loading="lazy"
-                style="margin-top: -3px;" />
-            </a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-              aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="#intro">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#events">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#committee">Committee</a>
-                </li>
-              </ul>
-    
-              <ul class="navbar-nav d-flex flex-row">
-                <!-- Icons -->
-                <li class="nav-item me-3 me-lg-0">
-                  <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="https://www.instagram.com/uwe_lgbt/" rel="nofollow" target="_blank">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <a class="nav-link" href="https://discord.gg/5M2Mfan" rel="nofollow"
-                    target="_blank">
-                    <i class="fab fa-discord"></i>
-                  </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                  <a class="nav-link" href="https://www.facebook.com/UWELGBT" rel="nofollow" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="nav-item me-3 me-lg-0">
-                  <a class="nav-link" href="https://twitter.com/UWE_LGBT" rel="nofollow" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Navbar -->
         <div id="intro" class="bg-image shadow-2-strong">
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
             <div class="container d-flex align-items-center justify-content-center text-center h-100">
@@ -396,6 +396,15 @@
                   </div>
             </div>
           </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script type="text/javascript">
+            $(function () {
+              $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('bg-dark', $(this).scrollTop() > $("header").height() - $nav.height());
+              });
+            });
+          </script>
           <footer class="bg-light text-lg-start">
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
               © UWE LGBT+ Society 2022
